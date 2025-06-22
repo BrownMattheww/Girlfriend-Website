@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #f5ebe0;
+  font-family: "Chicle", serif;
+}
+
+p {
+  color: #f5ebe0
+}
+
+#password {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #f5ebe0;
+  border-radius: 5px;
+  height: 50px;
+  line-height: normal;
+  color: black;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  user-select: auto;
+  font-size: 16px;
+  padding: 0 6px;
+  padding-left: 12px;        
+}
+
+#password:focus{
+    outline: none;
+    border-color: #f5ebe0;
+}
+
+.background {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/background1.svg');
+  background-size: cover;
+  animation: switchBg 4s infinite alternate;
+}
+
+@keyframes switchBg {
+  0% {
+    background-image: url('./assets/background1.svg');
+  }
+  100% {
+    background-image: url('./assets/background2.svg');
+  }
+}
