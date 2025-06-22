@@ -9,10 +9,11 @@
 }
 
 body {
-  margin: 0;
+  margin: 10px;
+  padding: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: center; 
+  align-items: center;     
   min-height: 100vh;
 }
 
@@ -25,6 +26,22 @@ h1 {
 
 p {
   color: #f5ebe0
+}
+
+#passwordCheck{
+  margin: 30px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5ebe0;
+  font-family: "Chicle", serif;
+  font-size: larger;
+}
+
+#passwordCheck:active{
+  background-color: #f3e0cb;
+  transform: translateY(4px);
 }
 
 #password {
@@ -41,7 +58,14 @@ p {
   user-select: auto;
   font-size: 16px;
   padding: 0 6px;
-  padding-left: 12px;        
+  padding-left: 12px;
+  background-color: #f5ebe0;
+  font-family: "Chicle", serif;      
+}
+
+#password::placeholder{
+  text-align: center;
+  color: black;
 }
 
 #password:focus{
@@ -50,12 +74,16 @@ p {
 }
 
 .background {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-image: url('./assets/background1.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
   animation: switchBg 4s infinite alternate;
 }
 
