@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=DynaPuff:wght@400..700&display=swap');
+
 #button { 
   display: flex;
   justify-content: center;
@@ -30,4 +32,29 @@ a {
 #buttonComponent { 
   display: flex;
   gap: 150px;
+  margin: 70px;
+}
+
+#daisys {
+  z-index: -1;
+  position: fixed;
+  top: 75px;
+  left: 250px;
+  height: 250px;
+  width: auto;
+}
+
+#daisys2{
+  z-index: -1;
+  position: fixed;
+  top: 75px;
+  right: 250px;
+  height: 250px;
+  width: auto;
+  transform: rotate(67deg);
+}
+
+p {
+  text-align: center;
+  font-family: "DynaPuff", system-ui;
 }

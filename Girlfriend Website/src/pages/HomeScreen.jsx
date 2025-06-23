@@ -2,6 +2,8 @@ import CoolButton from "../components/coolButton"
 import calendar from "../assets/calendar.gif"
 import planner from '../assets/planner.gif'
 import notebook from '../assets/notebook.gif'
+import seal from '../assets/seal.gif'
+import camera from '../assets/camera.gif'
 import '../button.css'
 
 
@@ -9,11 +11,16 @@ export default function HomePage() {
 
     return (
         <>
-        <h1 id="buttonTitle">Choose a category</h1>
+        <img id="daisys" src="daisy.gif" alt="daisys" />
+        <img id="daisys2" src="daisy.gif" alt="daisys" />
+        <h1 id="buttonTitle">Daisys Website!</h1>
+        <p> Click on any of the categorys below! </p>
         <div id="buttonComponent">
         <CoolButton title='Time!' image = {calendar} />
         <CoolButton title='Planner' image = {planner} />
         <CoolButton title='Message' image = {notebook} />
+        <CoolButton title='Songs' image = {seal} />
+        <CoolButton title='Gallery' image = {camera} />
         </div>
         </>
     );
