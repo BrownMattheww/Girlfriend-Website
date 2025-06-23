@@ -1,0 +1,33 @@
+#button { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: ease-in 0.5s;
+}
+
+#button:hover {
+  transform: scale(1.05);
+}
+
+#buttonTitle {
+  text-decoration: none;
+  text-align: center;
+  color: #f5ebe0;
+}
+
+#buttonImage{
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+#buttonComponent { 
+  display: flex;
+  gap: 150px;
+}

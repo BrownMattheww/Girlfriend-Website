@@ -15,6 +15,7 @@ body {
   justify-content: center; 
   align-items: center;     
   min-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -40,7 +41,7 @@ p {
 }
 
 #passwordCheck:active{
-  background-color: #f3e0cb;
+  background-color: #f5e2ff;
   transform: translateY(4px);
 }
 
@@ -60,7 +61,8 @@ p {
   padding: 0 6px;
   padding-left: 12px;
   background-color: #f5ebe0;
-  font-family: "Chicle", serif;      
+  font-family: "Chicle", serif;   
+  text-align: center;   
 }
 
 #password::placeholder{

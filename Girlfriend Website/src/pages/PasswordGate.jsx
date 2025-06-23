@@ -1,7 +1,9 @@
-import './App.css'
-import { useState } from 'react'
+import '../index.css'
+import { useNavigate } from 'react-router-dom';
 
-function App() {
+export default function PasswordGate() {
+
+  const navigate = useNavigate();
 
   function passwordCheck() {
     const correctPassword = "daisy";
@@ -11,6 +13,7 @@ function App() {
       alert("Password is incorrect!");
     } else if (correctPassword == enteredPassword){
       alert("Password is correct!")
+      navigate("/home")
     } else {
       alert("Please enter a valid password")
     }
@@ -29,5 +32,3 @@ function App() {
     </>
   )
 }
-
-export default App
