@@ -5,13 +5,15 @@ import './index.css'
 
 import PasswordGate from './pages/PasswordGate.jsx'
 import HomePage from './pages/HomeScreen.jsx'
+import TimePage from './pages/TimePage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<PasswordGate />} />
-        <Route path='/home' element={<HomePage />} /> 
+        <Route path='/home' element={<HomePage />} />
+        <Route path='/time' element={<TimePage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
