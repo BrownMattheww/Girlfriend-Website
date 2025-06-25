@@ -58,3 +58,21 @@ p {
   text-align: center;
   font-family: "DynaPuff", system-ui;
 }
+
+@media only screen and (max-width: 1080px){
+    #buttonComponent{
+        flex-direction: column;
+    }
+
+    body { 
+        overflow: auto;
+    }
+
+    #daisys {
+        display: none;
+    }
+
+    #daisys2 {
+        display: none;
+    }
+}
