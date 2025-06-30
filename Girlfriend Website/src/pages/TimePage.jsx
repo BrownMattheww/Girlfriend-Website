@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import '../time.css'
 
 export default function TimePage() {
   const [elapsed, setElapsed] = useState("days: 0, hours: 0, minutes: 0, seconds: 0")
@@ -26,10 +27,13 @@ export default function TimePage() {
   }, []);
 
 
-    return (
-        <>
-        <h1>I have known you for:</h1>
-          <p>{elapsed.days} Days, {elapsed.hours} Hours, {elapsed.minutes} Minutes, {elapsed.seconds} Seconds</p>
-        </>
-    )
+  return (
+    <>
+      <div id="timeComponent">
+        <h1>I met you on the 18th of may!</h1>
+        <h2>Or more specifically i have known you for:</h2>
+        <p>{elapsed.days} Days, {elapsed.hours} Hours, {elapsed.minutes} Minutes, {elapsed.seconds} Seconds</p>
+      </div>
+    </>
+  )
 }

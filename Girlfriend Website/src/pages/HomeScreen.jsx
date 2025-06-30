@@ -24,9 +24,14 @@ export default function HomePage() {
                 <Link to="/time"> 
                     <CoolButton title='Time!' image={calendar} />
                 </Link>
+
                 <CoolButton title='Planner' image={planner} />
                 <CoolButton title='Message' image={notebook} />
-                <CoolButton title='Songs' image={seal} />
+
+                <Link to="/playlist"> 
+                    <CoolButton title='Songs' image={seal} />
+                </Link>
+
                 <CoolButton title='Gallery' image={camera} />
             </div>
         </>

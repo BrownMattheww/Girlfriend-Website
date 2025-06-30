@@ -1,0 +1,43 @@
+#timeComponent {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+}
+
+#playlistComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.2em;
+    line-height: 1.1;
+    color: #f5ebe0;
+    font-family: "Chicle", serif;
+    text-align: center;
+}
+
+p {
+    font-size: 2.2em;
+    line-height: 1.1;
+    color: #f5ebe0;
+    font-family: "Chicle", serif;
+}
+
+@media only screen and (max-width: 1080px){
+    iframe {
+        width: fit-content;
+        height: 400px;
+    }
+
+    h1 {
+        font-size: smaller;
+        font-size: 2.2em;
+    }
+
+    body { 
+        margin: 20px;
+    }    
+}
